@@ -1,0 +1,7 @@
+:root{--bg:#f3f6ff;--surface:#fff;--ink:#1b2559;--muted:#667096;--line:#e3e8fa;--brand:#2f6fed;--brand2:#7aa2ff;--tint:#eaf0ff;--mint:#1fbf94;--peach:#ff9f43;--rose:#e23c5a;color-scheme:light;box-sizing:border-box}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.5 "DM Sans",system-ui,sans-serif;padding-top:env(safe-area-inset-top,0px)}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",sans-serif;margin:0;letter-spacing:-.02em}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--brand2);outline-offset:2px}

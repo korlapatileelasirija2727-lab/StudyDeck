@@ -1,0 +1,4 @@
+@media(max-width:760px){
+.nav{flex-wrap:wrap}.chips{margin-left:auto}.tabs{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));margin:0;justify-content:flex-start;overflow-x:auto;box-shadow:0 12px 30px rgba(60,70,160,.25);z-index:20}
+.tab{padding:8px 9px;font-size:12px}.hero,.rhero{grid-template-columns:1fr;justify-items:start}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-delay:0s!important;transition:none!important}}

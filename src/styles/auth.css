@@ -1,0 +1,6 @@
+/* auth */
+.auth{position:fixed;inset:0;z-index:40;overflow:auto;background:linear-gradient(135deg,#fff1e6,#ffe0ea 50%,#e8e4ff);display:grid;place-items:center;padding:24px;--brand:#f2603f;--brand2:#ffa94d}
+.orb{position:absolute;border-radius:50%;filter:blur(40px);opacity:.55;animation:drift 9s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate(40px,-50px) scale(1.2)}}
+.acard{position:relative;width:min(440px,100%);background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border-radius:28px;padding:28px;box-shadow:0 30px 70px rgba(242,96,63,.2);animation:pop .7s cubic-bezier(.2,.9,.3,1.2);margin:auto}
+.acard h1{font-size:30px;font-weight:800;margin-bottom:4px}

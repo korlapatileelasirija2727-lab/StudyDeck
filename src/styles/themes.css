@@ -1,0 +1,19 @@
+/* page themes: every page has its own hue */
+.th{min-height:100vh;background:var(--tint);transition:background .5s;position:relative;overflow-x:clip}
+.th::before,.th::after{content:"";position:fixed;z-index:0;border-radius:50%;filter:blur(70px);pointer-events:none;animation:drift 12s ease-in-out infinite alternate}
+.th::before{width:380px;height:380px;background:var(--brand2);opacity:.35;top:-110px;right:-90px}
+.th::after{width:340px;height:340px;background:var(--brand);opacity:.18;bottom:-130px;left:-90px;animation-delay:-5s}
+.th-subjects{--brand:#2f6fed;--brand2:#7aa2ff;--tint:#eaf0ff}
+.th-goals{--brand:#139a4a;--brand2:#5fd68a;--tint:#e8f8ee}
+.th-todo{--brand:#d98a00;--brand2:#ffc84a;--tint:#fff6dc}
+.th-focus{--brand:#6d3fe0;--brand2:#a98bff;--tint:#f0eaff}
+.th-progress{--brand:#0a9fc4;--brand2:#67d4ee;--tint:#e2f6fb}
+.th-reminders{--brand:#e23c5a;--brand2:#ff8fa3;--tint:#ffeaee}
+.th-rewards{--brand:#d433b0;--brand2:#ff8a3d;--tint:#fff0f8}
+.th-profile{--brand:#7b3fe4;--brand2:#ff7a59;background:radial-gradient(circle at 8% 0,#ffe0ea,transparent 40%),radial-gradient(circle at 95% 8%,#d9f1ff,transparent 40%),radial-gradient(circle at 50% 100%,#ece2ff,transparent 45%),radial-gradient(circle at 0 90%,#fff3c9,transparent 35%),#fffaf6}
+.cover{border-radius:26px;padding:30px;color:#fff;margin-bottom:16px;background:linear-gradient(120deg,#e23c5a,#ff8a3d,#e09b00,#139a4a,#0a9fc4,#6d3fe0,#d433b0,#e23c5a);background-size:300% 100%;animation:flow 10s linear infinite;box-shadow:0 20px 44px rgba(109,63,224,.25)}
+@keyframes flow{to{background-position:300% 0}}
+.cover h1{font-size:clamp(30px,5vw,44px);font-weight:800}.cover p{margin:4px 0 0;font-weight:500;opacity:.95}
+.ptiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-bottom:16px}
+.pt{background:color-mix(in srgb,var(--c) 12%,#fff);border:1.5px solid color-mix(in srgb,var(--c) 40%,#fff);border-radius:18px;padding:14px;text-align:center;animation:pop .5s backwards;animation-delay:calc(var(--d)*.07s);transition:transform .2s}
+.pt:hover{transform:translateY(-4px) rotate(-1deg)}.pt span{font-size:26px}.pt b{display:block;font:800 26px "Bricolage Grotesque";color:var(--c)}.pt small{color:var(--muted)}
